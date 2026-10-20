@@ -783,143 +783,46 @@ footer p {
     }
 }
 
-/* Mobile Responsive Fix */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
 
-html {
-    width: 100%;
-    overflow-x: clip;
-    scroll-behavior: smooth;
-}
-
-body {
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-    overflow-x: clip;
-}
-
-img,
-video,
-iframe {
-    max-width: 100%;
-}
-
-img {
-    height: auto;
-}
-
-.container,
-header,
-main,
-section,
-footer {
-    max-width: 100%;
-}
-
-@media (max-width: 600px) {
+/* Desktop Layout Fix */
+@media (min-width: 601px) {
     body {
-        font-size: 14px;
+        overflow-x: clip;
+    }
+
+    .container,
+    .section,
+    .section-heading,
+    .skills-section,
+    .projects-section,
+    .product-section,
+    .contact-section {
+        width: 100%;
+        max-width: 1160px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .container {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    main > section {
         width: 100%;
-        padding-left: 18px;
-        padding-right: 18px;
-    }
-
-    section {
-        padding-top: 55px;
-        padding-bottom: 55px;
-    }
-
-    h1 {
-        font-size: clamp(28px, 8vw, 38px);
-        line-height: 1.6;
-        overflow-wrap: anywhere;
-    }
-
-    h2 {
-        font-size: clamp(22px, 6vw, 29px);
-        line-height: 1.7;
-    }
-
-    p {
-        overflow-wrap: anywhere;
+        max-width: 1220px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 32px;
+        padding-right: 32px;
     }
 
     .skills-grid,
     .projects-grid,
     .projects-container {
-        grid-template-columns: minmax(0, 1fr);
-        width: 100%;
-    }
-
-    .skill-category,
-    .project-card {
-        min-width: 0;
-        padding: 20px;
-    }
-
-    .skill-tags {
-        gap: 7px;
-    }
-
-    .skill-tags span {
-        max-width: 100%;
-        overflow-wrap: anywhere;
-        font-size: 11px;
-    }
-
-    .hero,
-    .hero-content,
-    .hero-text,
-    .about-content {
-        min-width: 0;
-        width: 100%;
-    }
-
-    .hero {
-        grid-template-columns: minmax(0, 1fr);
-        gap: 30px;
-    }
-
-    .hero-image,
-    .hero-visual,
-    .about-image {
         width: 100%;
         max-width: 100%;
-        min-width: 0;
-    }
-
-    .hero-image img,
-    .hero-visual img,
-    .about-image img {
-        width: 100%;
-        max-width: 100%;
-        object-fit: cover;
-    }
-
-    .hero-buttons {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-
-    .hero-buttons a,
-    .hero-buttons button {
-        max-width: 100%;
-    }
-
-    nav {
-        max-width: 100%;
-    }
-
-    .floating-card {
-        max-width: calc(100% - 24px);
+        margin-left: auto;
+        margin-right: auto;
     }
 }
