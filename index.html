@@ -4,39 +4,356 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>معرفی من</title>
+
+    <title>Ali Kiamanesh | Developer & Product Builder</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
+
 <body>
 
-    <header>
-        <h3>معرفی من</h3>
-    </header>
+<header class="navbar">
+    <a href="#" class="logo">AK<span>.</span></a>
 
-    <main>
-        <img src="https://igtop.ir/wp-content/uploads/2020/02/instagram-admin.png" alt="عکس من">
+    <nav>
+        <a href="#about">درباره من</a>
+        <a href="#projects">پروژه‌ها</a>
+        <a href="#product">محصول</a>
+        <a href="#skills">مهارت‌ها</a>
+    </nav>
 
-        <h1>سلام، من <span>علی کیامنش</span> هستم.</h1>
+    <a href="#contact" class="nav-button">ارتباط با من ↗</a>
+</header>
 
+<main>
+
+    <section class="hero" id="about">
+
+        <div class="hero-text">
+            <div class="status"><span></span> در حال یادگیری و ساختن</div>
+
+            <p class="eyebrow">DEVELOPER · PRODUCT BUILDER</p>
+
+            <h1>
+                ایده‌ها رو تحلیل می‌کنم،
+                <br>
+                <span>و به ابزار تبدیل می‌کنم.</span>
+            </h1>
+
+            <p class="description">
+                من علی کیامنش هستم؛ علاقه‌مند به برنامه‌نویسی،
+                حل مسئله و ساخت محصولات دیجیتال.
+                از کار با API و Python تا بررسی مسئله‌های کاربران
+                و پیدا کردن راه‌حل‌های ساده و کاربردی.
+            </p>
+
+            <div class="buttons">
+                <a href="#projects" class="button primary">پروژه‌های من ↙</a>
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="button secondary">
+                    <i class="fa-brands fa-github"></i> GitHub
+                </a>
+            </div>
+
+            <div class="quick-info">
+                <span><i class="fa-solid fa-code"></i> Backend</span>
+                <span><i class="fa-solid fa-window-maximize"></i> Frontend</span>
+                <span><i class="fa-solid fa-lightbulb"></i> Product</span>
+            </div>
+        </div>
+
+        <div class="hero-visual">
+            <img
+                class="hero-image"
+                src="1.jpg"
+                alt="محیط کار برنامه‌نویسی"
+            >
+
+            <div class="floating-card">
+                <i class="fa-solid fa-terminal"></i>
+                <div>
+                    <strong>Build. Learn. Repeat.</strong>
+                    <small>One project at a time.</small>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="section" id="projects">
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">SELECTED WORK</p>
+                <h2>پروژه‌های برنامه‌نویسی<span>.</span></h2>
+            </div>
+            <p>چیزهایی که ساخته‌ام و از آن‌ها یاد گرفته‌ام.</p>
+        </div>
+
+        <div class="project-grid">
+
+            <article class="project-card">
+                <div class="card-icon"><i class="fa-solid fa-book-open"></i></div>
+                <span class="number">01 / BACKEND</span>
+
+                <h3>Books REST API</h3>
+                <p>
+                    ساخت API مدیریت کتاب با FastAPI؛
+                    شامل ایجاد، دریافت، ویرایش و حذف کتاب‌ها،
+                    شناسه‌گذاری و مدیریت خطاهای 404.
+                </p>
+
+                <div class="tags">
+                    <span>Python</span><span>FastAPI</span>
+                    <span>REST API</span><span>Pydantic</span>
+                </div>
+
+                <a href="https://github.com/" class="project-link" target="_blank" rel="noopener noreferrer">
+                    مشاهده کد <i class="fa-solid fa-arrow-left"></i>
+                </a>
+            </article>
+
+            <article class="project-card">
+                <div class="card-icon purple"><i class="fa-solid fa-database"></i></div>
+                <span class="number">02 / DATA</span>
+
+                <h3>Open Library Data</h3>
+                <p>
+                    دریافت اطلاعات کتاب از یک API عمومی،
+                    فیلتر کردن نتایج بر اساس سال انتشار
+                    و ذخیره داده‌ها در فایل CSV با Python.
+                </p>
+
+                <div class="tags">
+                    <span>Python</span><span>Requests</span>
+                    <span>JSON</span><span>CSV</span>
+                </div>
+
+                <a href="https://github.com/" class="project-link" target="_blank" rel="noopener noreferrer">
+                    مشاهده کد <i class="fa-solid fa-arrow-left"></i>
+                </a>
+            </article>
+
+            <article class="project-card">
+                <div class="card-icon green"><i class="fa-brands fa-telegram"></i></div>
+                <span class="number">03 / AUTOMATION</span>
+
+                <h3>Telegram Tools</h3>
+                <p>
+                    تمرین ساخت ربات و اتصال سرویس‌ها؛
+                    کار با Telegram API و توسعه ابزارهای ساده
+                    برای کاهش کارهای تکراری غرفه‌داری.
+                </p>
+
+                <div class="tags">
+                    <span>Python</span><span>Telegram API</span>
+                    <span>HTTP</span><span>JSON</span>
+                </div>
+
+                <a href="https://github.com/" class="project-link" target="_blank" rel="noopener noreferrer">
+                    مشاهده کد <i class="fa-solid fa-arrow-left"></i>
+                </a>
+            </article>
+
+        </div>
+    </section>
+
+    <section class="product-section" id="product">
+
+        <div class="product-image">
+            <img
+                src="2.jpg"
+                alt="برنامه‌ریزی و تحلیل محصول"
+            >
+        </div>
+
+        <div class="product-text">
+            <p class="eyebrow">PRODUCT THINKING</p>
+            <h2>فقط کد نمی‌زنم؛<br><span>مسئله رو هم بررسی می‌کنم.</span></h2>
+
+            <p>
+                در مسیر Product Building، روی شناخت مسئله‌های کاربران،
+                بررسی شواهد، انتخاب راه‌حل ساده و ساخت ارزش افزوده تمرکز می‌کنم.
+                هدفم اینه که قبل از ساختن، بفهمم چه چیزی واقعاً ارزش ساختن داره.
+            </p>
+
+            <div class="product-points">
+                <div>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <span>تشخیص مسئله بر اساس شواهد</span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span>تحلیل و اولویت‌بندی مسئله‌ها</span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-cubes"></i>
+                    <span>راه‌حل ساده و MVP</span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-users"></i>
+                    <span>تمرکز بر ارزش برای کاربران</span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    
+<section class="section skills-section" id="skills">
+    <div class="section-heading">
+        <span class="section-label">MY TOOLKIT</span>
+        <h2>مهارت‌ها و مسیر یادگیری من</h2>
         <p>
-           یه توضیح الکی برای پر شدن این بخش از این سایت،
-		   ادامه این توضحات الکی برای تکمیل شدن این بخش از سایت
+            ترکیبی از برنامه‌نویسی، ساخت محصول و تجربه‌های خلاقانه؛
+            با تمرکز بر یادگیری عملی و حل مسئله.
         </p>
+    </div>
 
-        <h3>بعضی از مهارت های من</h3>
+    <div class="skills-grid">
 
-        <p>برنامه‌نویسی | بازی سازی | گرافیک</p>
-    </main>
-	<section>
-		<h1>چندی لینک:</h1>
-		<p><a href="https://github.com/alikiamanesh16-afk">github</a></p>
-		<p><a href="https://github.com/alikiamanesh16-afk">linkedin</a></p>
-		<p><a href="https://github.com/alikiamanesh16-afk">instagram</a></p>
-	</section>
+        <article class="skill-category">
+            <div class="skill-icon">
+                <i class="fa-solid fa-code"></i>
+            </div>
+            <h3>برنامه‌نویسی و بک‌اند</h3>
+            <p class="skill-description">
+                ساخت API و تمرین منطق برنامه‌نویسی
+            </p>
+            <div class="skill-tags">
+                <span>Python</span>
+                <span>FastAPI</span>
+                <span>Flask</span>
+                <span>OOP</span>
+                <span>Algorithms</span>
+                <span>Data Structures</span>
+                <span>HTTP</span>
+                <span>REST API</span>
+                <span>SQL</span>
+            </div>
+        </article>
 
-    <footer>
-        <h5>ارتباط با من: alikiamanesh.16@gmail.com</h5>
-    </footer>
+        <article class="skill-category">
+            <div class="skill-icon">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+            </div>
+            <h3>ابزارها و کار با داده</h3>
+            <p class="skill-description">
+                ارتباط با سرویس‌ها و پردازش داده
+            </p>
+            <div class="skill-tags">
+                <span>Git</span>
+                <span>GitHub</span>
+                <span>Postman</span>
+                <span>Requests</span>
+                <span>JSON</span>
+                <span>CSV</span>
+                <span>Public APIs</span>
+                <span>Telegram Bot API</span>
+            </div>
+        </article>
+
+        <article class="skill-category">
+            <div class="skill-icon">
+                <i class="fa-solid fa-cubes"></i>
+            </div>
+            <h3>فرانت‌اند و وب</h3>
+            <p class="skill-description">
+                آشنایی مقدماتی با ساختار و ظاهر صفحات وب
+            </p>
+            <div class="skill-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Responsive Design</span>
+            </div>
+        </article>
+
+        <article class="skill-category">
+            <div class="skill-icon">
+                <i class="fa-solid fa-lightbulb"></i>
+            </div>
+            <h3>محصول و حل مسئله</h3>
+            <p class="skill-description">
+                از شناخت مسئله تا بررسی راه‌حل‌های ساده
+            </p>
+            <div class="skill-tags">
+                <span>Product Thinking</span>
+                <span>Problem Discovery</span>
+                <span>Problem Analysis</span>
+                <span>Prioritization</span>
+                <span>MVP</span>
+                <span>UX</span>
+                <span>Product Building</span>
+            </div>
+        </article>
+
+        <article class="skill-category">
+            <div class="skill-icon">
+                <i class="fa-solid fa-gamepad"></i>
+            </div>
+            <h3>بازی‌سازی و توسعهٔ تعاملی</h3>
+            <p class="skill-description">
+                تجربهٔ برنامه‌نویسی و ساخت پروژه‌های بازی
+            </p>
+            <div class="skill-tags">
+                <span>Unity</span>
+                <span>C#</span>
+                <span>Game Development</span>
+            </div>
+        </article>
+
+        <article class="skill-category">
+            <div class="skill-icon">
+                <i class="fa-solid fa-pen-nib"></i>
+            </div>
+            <h3>طراحی و تولید محتوا</h3>
+            <p class="skill-description">
+                تجربهٔ کارهای بصری و تولید محتوای دیجیتال
+            </p>
+            <div class="skill-tags">
+                <span>Graphic Design</span>
+                <span>Adobe Tools</span>
+                <span>Animation</span>
+                <span>Video Editing</span>
+                <span>Audio</span>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+
+    <section class="contact-section" id="contact">
+        <i class="fa-regular fa-paper-plane contact-icon"></i>
+        <p class="eyebrow">LET'S BUILD SOMETHING</p>
+        <h2>ایده‌ای برای ساختن داری؟<br><span>بیا صحبت کنیم.</span></h2>
+        <p>برای گفت‌وگو درباره برنامه‌نویسی، محصول و همکاری.</p>
+
+        <a href="mailto:alikiamanesh.16@gmail.com" class="button primary">
+            ارسال ایمیل <i class="fa-solid fa-arrow-left"></i>
+        </a>
+    </section>
+
+</main>
+
+<footer>
+    <a href="#" class="logo">AK<span>.</span></a>
+    <p>ساخته شده با کمک فراروان از AI.</p>
+
+    <div class="social-links">
+        <a href="https://github.com/" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="mailto:alikiamanesh.16@gmail.com" aria-label="Email">
+            <i class="fa-regular fa-envelope"></i>
+        </a>
+    </div>
+</footer>
 
 </body>
 </html>
